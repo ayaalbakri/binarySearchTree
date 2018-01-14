@@ -42,3 +42,23 @@ BinarySearchTree.prototype.contain = function(value) {
 		else return this.right.contain(value);
 	}
 };
+BinarySearchTree.prototype.maxVal = function() {
+	// body...
+	if (!this.right) {
+		return this.value
+	}
+	else{
+		return this.right.maxVal();
+	}
+
+};
+BinarySearchTree.prototype.minVal = function() {
+	// body...
+	if (!this.left) {
+		return this.value;
+	}
+	else{
+		return this.left.minVal();
+	}
+};
+
