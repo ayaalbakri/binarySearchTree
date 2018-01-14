@@ -62,3 +62,5 @@ BinarySearchTree.prototype.minVal = function() {
 	}
 };
 
+// Depth 
+
